@@ -821,7 +821,6 @@ int client()
             else printf("\n[SERVER] : %s\n", client_response);
 
     if (strcmp(client_response, "Found file") != 0) {
-        printf("\n[FUCK] : %s\n", client_response);
         new_request = 0;
         client();
         close(sd);
